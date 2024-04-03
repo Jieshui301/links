@@ -2,10 +2,12 @@
 <html>
   <head>
     <title>Jiexin D</title>
-    <meta name="author" content="Jiexin Deng"
+    <meta name="author" content="Jiexin Deng">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
   </head>
 
   <body>
+  <div class="items">
     <div class="banner">
       <img src="/thumbnails/Jiexin_deng_headshot.png" alt="Jiexin Deng's headshot" class="banner-image">
     </div>
@@ -15,35 +17,37 @@
     </div>
 
     <div class="social-icons">
-      <a href="" target="_blank">
+      <a href="https://www.linkedin.com/in/jiexin-deng" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>&nbsp;
         LinkedIn
       </a>
 
-      <a href="" target="_blank">
+      <a href="https://www.instagram.com/jieshuidenggg/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>&nbsp; 
         Instagram
       </a>
     </div>
 
     <div class="link">
-      <img scr="/thumbnails/Rural_travelling.png"> 
-      <a target="_blank" href="">Rural revitalization</a> 
+      <img src="/thumbnails/icon_rural_travelling.png" class="section"> 
+      <a target="_blank" href="">Rural travelling</a> 
     </div>
 
     <div class="link">
-      <img scr="/thumbnails/Art_business.png"> 
+      <img src="/thumbnails/icon_art.png" class="section">
       <a target="_blank" href="">Art+Business</a> 
     </div>
 
     <div class="link">
-      <img scr="/thumbnails/AI_gaming.png"> 
+      <img src="/thumbnails/icon_gaming.png" class="section">
       <a target="_blank" href="">AI+Gaming</a> 
     </div>
 
     <div class="link">
-      <img scr="/thumbnails/Film_production.png"> 
+      <img src="/thumbnails/icon_film.png" class="section">
       <a target="_blank" href="">Film production</a> 
     </div>
-
+  </div>
   </body>
 </html>
 
@@ -51,12 +55,65 @@
   body {
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: #fec7d7;
+    display: flex;
+    justify-content: center;
   }
 
+.name {
+  color:#0e172c;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}  
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color:#0e172c;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  background-color: #0e172c;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.link a {
+  color:#fffffe;
+  text-decoration: none;
+  text-align: center;
+  flex-grow:1;
+}
 .banner-image {
   width: 128px;
   height: 128px;
   object-fit: cover;
   border-radius: 128px;
 }
+
+.section {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  object-fit: cover;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  flex-grow: 1;
+}
+
+
 </style>
